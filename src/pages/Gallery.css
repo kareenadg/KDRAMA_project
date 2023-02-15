@@ -1,0 +1,26 @@
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 6rem 12rem;
+}
+
+main > figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+main > figure > img {
+    height: 250px;
+    width: auto;
+}
+
+main > figure > h3 {
+    font-size: 1rem;
+}
