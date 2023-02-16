@@ -5,7 +5,33 @@ main {
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
-    padding: 6rem 12rem;
+    padding: 2rem 14rem;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 0 17rem;
+}
+
+.filters > input {
+    background-color: rgba(178, 34, 34, 0.454);
+    height: 2rem;
+    width: 200px;
+    font-size: 1.3rem;
+    border-color: firebrick;
+    border-radius: 6px;
+    padding-left: 10px;
+    letter-spacing: 2px;
+}
+
+.filters > button {
+    border: none;
+    background: none;
+    font-size: 1rem;
+    color: bisque;
 }
 
 main > figure {
@@ -14,13 +40,15 @@ main > figure {
     justify-content: space-around;
     align-items: center;
     gap: 0.4rem;
+    padding: 0 1rem;
 }
 
 main > figure > img {
-    height: 250px;
+    height: 230px;
     width: auto;
 }
 
 main > figure > h3 {
     font-size: 1rem;
 }
+
