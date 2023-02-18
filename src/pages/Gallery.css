@@ -10,8 +10,7 @@ main {
 
 .filters {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 5rem;
     padding: 0 17rem;
 }
@@ -52,3 +51,8 @@ main > figure > h3 {
     font-size: 1rem;
 }
 
+main > figure > button {
+    background: none;
+    border: none;
+    color: bisque;
+}

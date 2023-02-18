@@ -8,3 +8,7 @@
   text-decoration: none;
   list-style-type: none;
 }
+
+main {
+  min-height: 90vh;
+}

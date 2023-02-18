@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Gallery.css";
 
 const Gallery = () => {
@@ -15,12 +16,13 @@ const Gallery = () => {
   }, []);
 
   const filterDrama = (keyword) => {
-    const filter = dramas.filter((drama) => {
-      drama.title.toLowerCase().includes(keyword.toLowerCase());
-      drama.year.includes(keyword);
-    });
+    const filter = dramas.filter((drama) => 
+      drama.title.toLowerCase().includes(keyword.toLowerCase()) ||
+      drama.year.includes(keyword))
     setFilteredDrama(filter);
   };
+
+
 
   return (
     <main>
@@ -49,7 +51,7 @@ const Gallery = () => {
           <img src={drama.image} alt={drama.title} />
           <h3>{drama.title}</h3>
           <figcaption>{drama.year}</figcaption>
-          <button>＋</button>
+          <Link to={`/gallery/${drama.id}`} >＋</Link>
         </figure>
       ))}
     </main>
